@@ -1,4 +1,2 @@
 # Mittelstufenprojekt
 Mittelstufenprojekt Musikschule
-
-TESTCOMMIT ALEX
