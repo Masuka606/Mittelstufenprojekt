@@ -12,7 +12,7 @@ namespace Musikschule.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "Das ist ein Test.";
         }
     }
 }
