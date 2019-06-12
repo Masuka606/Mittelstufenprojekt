@@ -3,3 +3,4 @@
 *.cache
 .vs/
 Musikschule/obj/project.assets.json
+Musikschule/obj/Musikschule.csproj.nuget.g.props
