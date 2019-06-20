@@ -9,12 +9,17 @@ namespace Musikschule.Pages
     public class DozentenModel : PageModel
     {
         public string Message { get; set; }
+       
+        
+
+        public List<Lehrer> Lehrer { get; set; }
 
         public void OnGet()
         {
             Message = "Your application description page.";
+           
         }
 
-    
+        
     }
 }
