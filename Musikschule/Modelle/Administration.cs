@@ -7,7 +7,7 @@ namespace Musikschule.Modelle
 {
     public class Administration:User
     {
-        public Administration(int User_iD, string lastName, string firstName, string birthplace, string birthdate, string email, string phoneNumber, int iD, string userName, string password) : base(iD, lastName, firstName, birthplace, birthdate, email, phoneNumber, iD, userName, password)
+        public Administration(int User_iD, string lastName, string firstName, string birthplace, DateTime birthdate, string email, string phoneNumber, int iD, string userName, string password) : base(iD, lastName, firstName, birthplace, birthdate, email, phoneNumber, iD, userName, password)
         {
 
         }

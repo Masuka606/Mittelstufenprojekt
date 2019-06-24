@@ -11,11 +11,15 @@ namespace Musikschule.Modelle
         private string LastName;
         private string FirstName;
         private string Birthplace;
-        private string Birthdate;
+        private DateTime Birthdate;
         private string Email;
         private string PhoneNumber;
 
-        public Person(int Person_iD, string lastName, string firstName, string birthplace, string birthdate, string email, string phoneNumber)
+        public Person()
+        {
+
+        }
+        public Person(int Person_iD, string lastName, string firstName, string birthplace, DateTime birthdate, string email, string phoneNumber)
         {
             Person_ID = Person_iD;
             LastName = lastName;

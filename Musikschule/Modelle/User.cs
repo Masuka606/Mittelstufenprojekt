@@ -11,7 +11,11 @@ namespace Musikschule.Modelle
         private string UserName;
         private string Password;
 
-        public User(int User_iD, string lastName, string firstName, string birthplace, string birthdate, string email, string phoneNumber, int iD, string userName, string password) : base( iD, lastName,  firstName,  birthplace, birthdate, email, phoneNumber)
+        public User()
+        {
+
+        }
+        public User(int User_iD, string lastName, string firstName, string birthplace, DateTime birthdate, string email, string phoneNumber, int iD, string userName, string password) : base( iD, lastName,  firstName,  birthplace, birthdate, email, phoneNumber)
         {
             User_ID = User_iD;
             UserName = userName;

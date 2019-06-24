@@ -11,7 +11,11 @@ namespace Musikschule.Modelle
         public int Teacher_ID { get; set; }
         string SalaryPerHour;
 
-        public Teacher(int User_iD, string lastName, string firstName, string birthplace, string birthdate, string email, string phoneNumber, int iD, string userName, string password, int teacher_iD, string salaryPerHour) : base(iD, lastName, firstName, birthplace, birthdate, email, phoneNumber, teacher_iD, userName, password)
+        public Teacher()
+        {
+
+        }
+        public Teacher(int User_iD, string lastName, string firstName, string birthplace, DateTime birthdate, string email, string phoneNumber, int iD, string userName, string password, int teacher_iD, string salaryPerHour) : base(iD, lastName, firstName, birthplace, birthdate, email, phoneNumber, teacher_iD, userName, password)
         {
             Teacher_ID = teacher_iD;
             SalaryPerHour = salaryPerHour;

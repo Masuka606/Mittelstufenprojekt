@@ -3,10 +3,33 @@
 @{
     ViewData["Title"] = "Dozenten";
 }
+
+
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
 <p>Lehrer hier.</p>
 
-@*<li>@Model.Dozenten</li>*@
+@{ 
+    var teachers = Musikschule.Modelle.Controller.DBConnect("Select * From dbo.Teacher INNER JOIN dbo.Users ON dbo.teacher.fk_user = dbo.Users.id INNER JOIN dbo.Person ON dbo.Users.fk_person = dbo.Person.ID");
+    
+}
 
+@*Tabelle*@
+@*<html>
+<body>
+    <h1>Small Bakery Products</h1>
+    <table border="1" width="100%">
+        <tr>
+            <th>Id</th>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Bankaccount</th>
+            <th>Stundenlohn</th>
+        </tr>*@
+
+
+        @{
+            var allteachers = Musikschule.Modelle.TeacherRepository.GetallTeachers();
+        }
+        @*<li>@Model.Dozenten</li>*@
