@@ -3,33 +3,65 @@
 @{
     ViewData["Title"] = "Dozenten";
 }
+@using System.Web.Helpers;
 
 
 <h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+@*<h3>@Model.Message</h3>*@
 
 <p>Lehrer hier.</p>
 
-@{ 
-    var teachers = Musikschule.Modelle.Controller.DBConnect("Select * From dbo.Teacher INNER JOIN dbo.Users ON dbo.teacher.fk_user = dbo.Users.id INNER JOIN dbo.Person ON dbo.Users.fk_person = dbo.Person.ID");
-    
-}
-
-@*Tabelle*@
-@*<html>
-<body>
-    <h1>Small Bakery Products</h1>
-    <table border="1" width="100%">
-        <tr>
-            <th>Id</th>
-            <th>Vorname</th>
-            <th>Nachname</th>
-            <th>Bankaccount</th>
-            <th>Stundenlohn</th>
-        </tr>*@
 
 
-        @{
-            var allteachers = Musikschule.Modelle.TeacherRepository.GetallTeachers();
+
+
+
+<html>
+@*<head>
+    <meta charset="utf-8" />
+    <title>Movies</title>
+    <style type="text/css">
+        .grid {
+            margin: 4px;
+            border-collapse: collapse;
+            width: 600px;
         }
-        @*<li>@Model.Dozenten</li>*@
+
+            .grid th, .grid td {
+                border: 1px solid #C0C0C0;
+                padding: 5px;
+            }
+
+        .head {
+            background-color: #E8E8E8;
+            font-weight: bold;
+            color: #FFF;
+        }
+
+        .alt {
+            background-color: #E8E8E8;
+            color: #000;
+        }
+    </style>
+</head>*@
+<body>
+    @*<h1>Lehrer</h1>
+    <div>
+        @*@@*grid.GetHtml(
+            tableStyle: "grid",
+            headerStyle: "head",
+            alternatingRowStyle: "alt",
+            columns: grid.Columns(
+                grid.Column("lastname"),
+                grid.Column("firstname"),
+                grid.Column("email"),
+                grid.Column("email"),
+                grid.Column("email")
+            )
+        )*@*@
+    </div>*@
+
+
+    <li>@Model.Message</li>
+</body>
+
