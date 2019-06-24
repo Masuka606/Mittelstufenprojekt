@@ -5,11 +5,7 @@ using System.Threading.Tasks;
 
 namespace Musikschule.Modelle
 {
-    public class Lehrer:User
+    public class Course
     {
-        
-        public int ID { get; set; }
-        string SalaryPerHour;
-
     }
 }

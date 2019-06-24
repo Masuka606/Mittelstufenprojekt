@@ -101,3 +101,5 @@ E:\Lukas\Git-Repos\Mittelstufenprojekt\Musikschule\obj\Debug\netcoreapp2.1\Razor
 E:\Lukas\Git-Repos\Mittelstufenprojekt\Musikschule\obj\Debug\netcoreapp2.1\Razor\Pages\Dozenten.g.cshtml.cs
 E:\Lukas\Git-Repos\Mittelstufenprojekt\Musikschule\obj\Debug\netcoreapp2.1\Musikschule.Properties.Resources.resources
 E:\Lukas\Git-Repos\Mittelstufenprojekt\Musikschule\obj\Debug\netcoreapp2.1\Musikschule.csproj.GenerateResource.cache
+C:\Users\soad_\Git_Repos\Mittelstufenprojekt\Musikschule\obj\Debug\netcoreapp2.1\Musikschule.Properties.Resources.resources
+C:\Users\soad_\Git_Repos\Mittelstufenprojekt\Musikschule\obj\Debug\netcoreapp2.1\Musikschule.csproj.GenerateResource.cache
