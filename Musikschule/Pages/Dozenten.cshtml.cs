@@ -12,7 +12,7 @@ namespace Musikschule.Pages
        
         
 
-        public List<Lehrer> Lehrer { get; set; }
+        //public List<Teacher> Lehrer { get; set; }
 
         public void OnGet()
         {
