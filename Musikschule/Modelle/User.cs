@@ -7,9 +7,9 @@ namespace Musikschule.Modelle
 {
     public class User:Person
     {
-        private int User_ID;
-        private string UserName;
-        private string Password;
+        public int User_ID;
+        public string UserName;
+        public string Password;
 
         public User()
         {

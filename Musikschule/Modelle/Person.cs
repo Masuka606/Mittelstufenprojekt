@@ -7,13 +7,13 @@ namespace Musikschule.Modelle
 {
     public class Person
     {
-        private int Person_ID;
-        private string LastName;
-        private string FirstName;
-        private string Birthplace;
-        private DateTime Birthdate;
-        private string Email;
-        private string PhoneNumber;
+        public int Person_ID;
+        public string LastName;
+        public string FirstName;
+        public string Birthplace;
+        public DateTime Birthdate;
+        public string Email;
+        public string PhoneNumber;
 
         public Person()
         {

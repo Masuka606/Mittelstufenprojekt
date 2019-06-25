@@ -9,7 +9,7 @@ namespace Musikschule.Modelle
     {
         
         public int Teacher_ID { get; set; }
-        string SalaryPerHour;
+        public string SalaryPerHour;
 
         public Teacher()
         {
