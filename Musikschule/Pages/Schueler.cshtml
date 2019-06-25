@@ -1,0 +1,41 @@
+﻿@page
+@model DozentenModel
+@{
+    ViewData["Title"] = "Schüler";
+}
+
+
+<h2>@ViewData["Title"]</h2>
+
+
+<h3>Folgende Schüler sind im System vorhanden.</h3>
+
+<table border="1" width="100%">
+    <tr>
+        <th>PersonId</th>
+        <th>Nachname</th>
+        <th>Vorname</th>
+        <th>Geburtsort</th>
+        <th>Geburtsdatum</th>
+        <th>Emailadresse</th>
+        <th>Telefonnummer</th>
+    </tr>
+    @{
+        List<Modelle.Student> studentList = Musikschule.Modelle.Controller.ShowStudents();
+
+        foreach (Modelle.Student student in studentList)
+        {
+    <tr>
+        <td>@student.Person_ID</td>
+        <td>@student.LastName</td>
+        <td>@student.FirstName</td>
+        <td>@student.Birthplace</td>
+        <td>@student.Birthdate</td>
+        <td>@student.Email</td>
+        <td>@student.PhoneNumber</td>
+
+    </tr>
+       }
+
+    }
+</table>

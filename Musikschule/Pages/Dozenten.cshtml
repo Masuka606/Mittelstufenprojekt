@@ -6,10 +6,10 @@
 
 
 <h2>@ViewData["Title"]</h2>
-.
+
 
 <h3>Folgende Lehrer sind im System vorhanden.</h3>
-
+@* Tabelle der Lehrer erstellen *@
 <table border="1" width="100%">
     <tr>
         <th>UserId</th>
@@ -23,8 +23,10 @@
         <th>Stundenlohn</th>
     </tr>
     @{
+        //Lehrer aus Der Datenbank auslesen und in eine Liste eintragen
         List<Modelle.Teacher> teacherList = Musikschule.Modelle.Controller.ShowTeachers();
 
+        //Tabelle befüllen
         foreach (Modelle.Teacher teacher in teacherList)
         {
     <tr>
@@ -42,3 +44,6 @@
 
     }
 </table>
+
+
+<button name="button" onclick="window.location.href='/Dozenten_hinzufügen'">Neuen Dozenten anlegen</button>

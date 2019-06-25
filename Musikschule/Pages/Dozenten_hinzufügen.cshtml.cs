@@ -6,13 +6,21 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Musikschule.Pages
 {
-    public class TestModel : PageModel
+    public class Dozenten_hinzufügenModel : PageModel
     {
         public string Message { get; set; }
 
+        
+       
+        
+
         public void OnGet()
         {
-            Message = "Das ist ein Test.";
+         
         }
+
+
+
+        
     }
 }

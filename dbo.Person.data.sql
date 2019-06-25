@@ -1,3 +1,4 @@
 ﻿INSERT INTO [dbo].[Person] ([Id], [last_name], [first_name], [fk_adress], [birthplace], [birthdate], [email], [phonenumber]) VALUES (1, N'Lehrer', N'Peter', 1, N'Zuhause', N'1998-01-01 00:00:00', N'testmail', N'testnummer')
 INSERT INTO [dbo].[Person] ([Id], [last_name], [first_name], [fk_adress], [birthplace], [birthdate], [email], [phonenumber]) VALUES (2, N'Teacher', N'Maren', 2, N'Köln', N'1967-02-01 00:00:00', N'testmail@testerino.com', N'0151111111111')
 INSERT INTO [dbo].[Person] ([Id], [last_name], [first_name], [fk_adress], [birthplace], [birthdate], [email], [phonenumber]) VALUES (3, N'Schüler', N'Justus Aurelius', 3, N'Dortmund', N'1965-03-01 00:00:00', N'xXJustAureliusXx@NoScope365.to', N'01756778678678')
+INSERT INTO [dbo].[Person] ([Id], [last_name], [first_name], [fk_adress], [birthplace], [birthdate], [email], [phonenumber]) VALUES (4, N'Schülah', N'Kevin', 4, N'Kerpen', N'2004-04-01 00:00:00', N'KevinSchülah@schule.koeln.de', N'0800 55555')

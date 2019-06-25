@@ -6,13 +6,21 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Musikschule.Pages
 {
-    public class AboutModel : PageModel
+    public class SchuelerModel : PageModel
     {
         public string Message { get; set; }
 
+        
+       
+        
+
         public void OnGet()
         {
-            Message = "Your application description page.";
+         
         }
+
+
+
+        
     }
 }
