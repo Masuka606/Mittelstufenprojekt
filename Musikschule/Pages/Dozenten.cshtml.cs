@@ -9,6 +9,8 @@ namespace Musikschule.Pages
     public class DozentenModel : PageModel
     {
         public string Message { get; set; }
+
+        
        
         
 
@@ -16,9 +18,11 @@ namespace Musikschule.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
-           
+          //  Message = Musikschule.Modelle.TeacherRepository.GetallTeachers(); 
+           Message = Musikschule.Modelle.Controller.DBConnect("Select * From dbo.Teacher INNER JOIN dbo.Users ON dbo.teacher.fk_user = dbo.Users.id INNER JOIN dbo.Person ON dbo.Users.fk_person = dbo.Person.ID");
         }
+
+
 
         
     }
