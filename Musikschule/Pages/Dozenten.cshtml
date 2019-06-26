@@ -2,13 +2,11 @@
 @model DozentenModel
 @{
     ViewData["Title"] = "Dozenten";
+    Musikschule.Modelle.Controller controller = new Musikschule.Modelle.Controller();
 }
-
-
 <h2>@ViewData["Title"]</h2>
-
-
 <h3>Folgende Lehrer sind im System vorhanden.</h3>
+
 @* Tabelle der Lehrer erstellen *@
 <table border="1" width="100%">
     <tr>
@@ -24,26 +22,24 @@
     </tr>
     @{
         //Lehrer aus Der Datenbank auslesen und in eine Liste eintragen
-        List<Modelle.Teacher> teacherList = Musikschule.Modelle.Controller.ShowTeachers();
+        List<Modelle.Teacher> teacherList = controller.ShowTeachers();
 
         //Tabelle befüllen
         foreach (Modelle.Teacher teacher in teacherList)
         {
-    <tr>
-        <td>@teacher.Teacher_ID</td>
-        <td>@teacher.LastName</td>
-        <td>@teacher.FirstName</td>
-        <td>@teacher.Birthplace</td>
-        <td>@teacher.Birthdate</td>
-        <td>@teacher.Email</td>
-        <td>@teacher.PhoneNumber</td>
-        <td>@teacher.UserName</td>
-        <td>@teacher.SalaryPerHour</td>
-    </tr>
-       }
-
+            <tr>
+                <td>@teacher.Teacher_ID</td>
+                <td>@teacher.LastName</td>
+                <td>@teacher.FirstName</td>
+                <td>@teacher.Birthplace</td>
+                <td>@teacher.Birthdate</td>
+                <td>@teacher.Email</td>
+                <td>@teacher.PhoneNumber</td>
+                <td>@teacher.UserName</td>
+                <td>@teacher.SalaryPerHour</td>
+            </tr>
+        }
     }
 </table>
-
 
 <button name="button" onclick="window.location.href='/Dozenten_hinzufügen'">Neuen Dozenten anlegen</button>

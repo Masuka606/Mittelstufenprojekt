@@ -2,6 +2,7 @@
 @model DozentenModel
 @{
     ViewData["Title"] = "Dozenten hinzufügen";
+    Musikschule.Modelle.Controller controller = new Musikschule.Modelle.Controller();
 }
 
 
@@ -32,7 +33,7 @@
             </div>
             <div>
                 <label>&nbsp;</label>
-                <input type="submit" value="Submit" class="submit" />
+                <input type="submit" value="Submit" class="submit" onclick="@Url.Action("Test", "controller")"/>
             </div>
         </fieldset>
     </form>

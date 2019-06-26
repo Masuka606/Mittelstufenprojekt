@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -14,7 +15,7 @@ namespace Musikschule.Modelle
         /// Öffnet Datenbankverbindung und führt ein SELECT aus
         /// </summary>
         /// <returns>List(Teacher) returnlist</returns>
-        public static List<Teacher> ShowTeachers()
+        public List<Teacher> ShowTeachers()
         {
             string connectionString;
             SqlConnection cnn;
@@ -76,7 +77,7 @@ namespace Musikschule.Modelle
             return resultList;
         }
 
-        public static List<Student> ShowStudents()
+        public List<Student> ShowStudents()
         {
             string connectionString;
             SqlConnection cnn;
@@ -126,6 +127,12 @@ namespace Musikschule.Modelle
                 });
             }
             return resultList;
+        }
+
+        [HttpPost]
+        public void Test()
+        {
+            
         }
     }
 }
